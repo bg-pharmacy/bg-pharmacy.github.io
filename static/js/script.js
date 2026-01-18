@@ -75,6 +75,7 @@ medicationForm.addEventListener("submit", e => {
 	if (currentSearch) {
 		const response = fetch(`http://94.26.19.117:15341/pharmaceutical/${currentSearch}`, {
 			method: "GET",
+			mode: "no-cors",
 		});
 		response.then(r => {
 			console.log(r.status);
