@@ -73,7 +73,7 @@ medicationForm.addEventListener("submit", e => {
 
 	const currentSearch = iam.value;
 	if (currentSearch) {
-		const response = fetch(`http://94.26.19.117:15341/pharmaceutical/${currentSearch}`, {
+		const response = fetch(`https://94.26.19.117:15341/pharmaceutical/${currentSearch}`, {
 			method: "GET",
 			mode: "no-cors",
 		});
